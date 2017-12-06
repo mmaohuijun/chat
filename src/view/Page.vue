@@ -2,7 +2,15 @@
   <div class="container">
       <div class="sidebar">
         <card></card>
-        <list></list>
+        <ul>
+          <list></list>
+          <list></list>
+          <list></list>
+          <list></list>
+          <list></list>
+          <list></list>
+          <list></list>
+        </ul>
       </div>
       <div class="body">
         <title></title>
@@ -21,7 +29,13 @@ import text from '../components/text'
 export default {
   name: 'Page',
   data () {
-      return {}
+    return {}
+  },
+  components: {
+    card,
+    list,
+    title,
+    text
   }
 }
 </script>
@@ -43,7 +57,7 @@ export default {
 }
 #app .sidebar {
   height: 100%;
-  width: 250px;
+  width: 300px;
   background:#ccc;
 }
 #app .body {
