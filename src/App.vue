@@ -21,4 +21,7 @@ export default {
   font-size: 14px;
   font-family: 'Microsoft Yahei';
 }
+ul {
+  list-style: none;
+}
 </style>

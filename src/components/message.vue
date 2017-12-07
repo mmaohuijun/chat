@@ -1,8 +1,14 @@
-<template>
-  <div class="message-box my-msg">
-    <img class="avatar my-msg" src="../assets/logo.png" alt="">
-    <div class="message my-msg">ds;ahgf;saldtohgslk;angls;kdngofnglsd;kgnfdkojgnfffffffffffffffffffl;diognkfglk伤筋动骨科技飞机都是高度规划</div>
-  </div>
+<template> 
+  <div>
+    <div class="message-box rt">
+      <img v-once class="avatar rt" src="../assets/logo.png" alt="">
+      <div class="my-message rt">hahah</div>
+    </div>
+    <div class="message-box lf">
+      <img v-once class="avatar lf" src="../assets/logo.png" alt="">
+      <div class="others-message lf">hahah</div>
+    </div>
+  </div> 
 </template>
 
 <script>
@@ -17,22 +23,21 @@ export default {
     width: 600px;
     height: auto;
   }
-  img.avatar {
+  .avatar {
     width: 45px;
     height: 45px;
     border-radius: 50%;
     background:#000;
     margin:0px 25px 15px 20px;
   }
-  .message{
+ /* 对方消息气泡*/
+  .others-message {
     background: #fff;
-    width: 500px;
     position: relative;
-    box-sizing: border-box;
     padding: 12px;
-    min-height: 25px;
-  }
-  .message:before {
+
+  } 
+  .others-message:before {
     content: '';
     position: absolute;
     left: -10px;
@@ -44,13 +49,31 @@ export default {
     border-top: 5px solid transparent;
     border-bottom: 5px solid transparent;
   }
-  .others-msg {
+  /*我的消息气泡*/
+  .my-message {
+    background: pink;
+    position: relative;
+    box-sizing: border-box;
+    padding: 12px;
+  }
+  .my-message:before {
+    content: '';
+    position: absolute;
+    right: -10px;
+    top: 5px;
+    width: 0;
+    height: 0;
+    border-left: 5px solid pink;
+    border-right: 5px solid transparent;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+  }
+  .lf {
     float: left;
   }
-  .my-msg {
+  .rt {
     float: right;
   }
-  
 </style>
 
 

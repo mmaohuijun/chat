@@ -11,6 +11,13 @@
           <span>张晓华</span>
         </div>
         <message></message>
+        <message></message>
+        <message></message>
+        <message></message>
+        <message></message>
+        <message></message>
+        <message></message>
+        <message></message>
         <carea></carea>
       </div>
     </div>
