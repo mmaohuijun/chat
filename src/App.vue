@@ -18,5 +18,7 @@ export default {
   background: #9DB2FA;
   padding-top: 50px;
   padding-bottom: 50px;
+  font-size: 14px;
+  font-family: 'Microsoft Yahei';
 }
 </style>

@@ -2,19 +2,16 @@
   <div class="container">
       <div class="sidebar">
         <card></card>
-        <ul>
-          <list></list>
-          <list></list>
-          <list></list>
-          <list></list>
-          <list></list>
-          <list></list>
+        <ul class="user-list">
           <list></list>
         </ul>
       </div>
       <div class="body">
-        <title></title>
-        <text></text>
+        <div class="header">
+          <span>张晓华</span>
+        </div>
+        <message></message>
+        <carea></carea>
       </div>
     </div>
 </template>
@@ -23,8 +20,8 @@
 
 import card from '../components/card'
 import list from '../components/list'
-import title from '../components/title'
-import text from '../components/text'
+import message from '../components/message'
+import carea from '../components/carea'
 
 export default {
   name: 'Page',
@@ -34,8 +31,8 @@ export default {
   components: {
     card,
     list,
-    title,
-    text
+    message,
+    carea
   }
 }
 </script>
@@ -61,8 +58,24 @@ export default {
   background:#ccc;
 }
 #app .body {
+  position: relative;
   height: 100%;
-  background: #ddd;
+  background: #DCDCF6;
   flex-grow: 1;
+}
+.header {
+  height: 60px;
+  width: 100%;
+  background: #5D5B8C;
+}
+.header span {
+  position: relative;
+  top: 20px;
+  left: 15px;
+  color: #C4C4E3;
+}
+.user-list {
+  background: #2E2C51;
+  height: 560px;
 }
 </style>
