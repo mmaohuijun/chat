@@ -16,9 +16,6 @@ export default {
   methods: {
     send () {
       this.emit('sendMessage')
-    },
-    sendMessage () {
-      console.log('sendMessage')
     }
   }
 }
