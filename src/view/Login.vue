@@ -10,7 +10,7 @@ export default {
   name: 'Login',
   data () {
     return {
-      msg: 'welcome to my world'
+      msg: 'welcome to my world haha'
     }
   }
 }

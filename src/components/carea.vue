@@ -18,9 +18,9 @@ export default {
 
 <style>
   .carea-box {
-    position: absolute;
+    /* position: absolute; */
     width: 100%;
-    bottom: 0;
+    /* bottom: 0; */
   }
   textarea {
     width: 100%;

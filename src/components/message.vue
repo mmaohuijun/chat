@@ -5,7 +5,7 @@
       <div class="my-message rt">hahah</div>
     </div>
     <div class="message-box lf">
-      <img v-once class="avatar lf" src="../assets/logo.png" alt="">
+      <img class="avatar lf" src="../assets/logo.png" alt="">
       <div class="others-message lf">hahah</div>
     </div>
   </div> 
@@ -51,7 +51,7 @@ export default {
   }
   /*我的消息气泡*/
   .my-message {
-    background: pink;
+    background: #849EFE;
     position: relative;
     box-sizing: border-box;
     padding: 12px;
@@ -63,7 +63,7 @@ export default {
     top: 5px;
     width: 0;
     height: 0;
-    border-left: 5px solid pink;
+    border-left: 5px solid #849EFE;
     border-right: 5px solid transparent;
     border-top: 5px solid transparent;
     border-bottom: 5px solid transparent;

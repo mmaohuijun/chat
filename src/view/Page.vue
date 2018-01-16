@@ -10,13 +10,16 @@
         <div class="header">
           <span>张晓华</span>
         </div>
-        <message></message>
-        <message></message>
-        <message></message>
-        <message></message>
-        <message></message>
-        <message></message>
-        <message></message>
+        <div class="content">
+          <message></message>
+          <message></message>
+          <message></message>
+          <message></message>
+          <message></message>
+          <message></message>
+          <message></message>
+        </div>
+        
         <!-- <message></message> -->
         <carea></carea>
       </div>
@@ -61,7 +64,7 @@ export default {
 }
 #app .sidebar {
   height: 100%;
-  width: 300px;
+  width: 400px;
   background:#ccc;
 }
 #app .body {
@@ -84,5 +87,10 @@ export default {
 .user-list {
   background: #2E2C51;
   height: 560px;
+}
+.content {
+  height: 590px;
+  width: 100%;
+  overflow: auto;
 }
 </style>
