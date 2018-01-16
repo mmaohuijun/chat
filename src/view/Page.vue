@@ -18,9 +18,13 @@
           <message></message>
           <message></message>
           <message></message>
+<<<<<<< HEAD
         </div>
         
         <!-- <message></message> -->
+=======
+        </div>    
+>>>>>>> 2272a22917c9edb06510e23c28b5d6ecf422c910
         <carea></carea>
       </div>
     </div>
@@ -90,7 +94,10 @@ export default {
 }
 .content {
   height: 590px;
+<<<<<<< HEAD
   width: 100%;
+=======
+>>>>>>> 2272a22917c9edb06510e23c28b5d6ecf422c910
   overflow: auto;
 }
 </style>

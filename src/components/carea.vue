@@ -2,7 +2,7 @@
   <div class="carea-box">
     <textarea placeholder="Type something to send..."></textarea>
     <div class="send">
-      <button>发送</button>
+      <button @click="send">发送</button>
     </div>
   </div>
 </template>
@@ -12,6 +12,11 @@ export default {
   name: 'carea',
   data () {
     return {}
+  },
+  methods: {
+    send () {
+      this.emit('sendMessage')
+    }
   }
 }
 </script>
